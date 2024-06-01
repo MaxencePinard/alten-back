@@ -7,7 +7,7 @@ const adminColumnSchema = mongoose.Schema({
   field: { type: String, required: true },
   sortable: { type: Boolean, required: true },
   searchable: { type: Boolean, required: true },
-  displayed: { type: Number, required: true },
+  displayed: { type: Number, required: false },
 });
 
 module.exports = mongoose.model('AdminColumn', adminColumnSchema);
